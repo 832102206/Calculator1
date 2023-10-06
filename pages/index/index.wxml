@@ -1,0 +1,11 @@
+<view class="screen">
+<view>{{result}}</view>
+<view>{{operation}}</view>
+</view>
+<view class="botton">
+ <block wx:for="{{items}}" wx:for-item="item">
+  <view class="item {{item.type === 'number' ? 'grey' : 'black'}}" id="{{item.id}}" data-value="{{item.value}}" bindtap="tap{{item.type}}" >
+  {{item.id}}
+  </view>
+ </block>
+</view> 

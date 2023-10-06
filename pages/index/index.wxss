@@ -1,0 +1,43 @@
+page{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+   
+.screen{
+    flex:1;
+    /*字体加粗*/
+    font-weight: bold;
+    /*字体大小*/
+    font-size: 140rpx;
+    /*文本靠齐*/
+    text-align: right;
+}
+.botton{
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    /*换行*/
+    flex-wrap: wrap;
+}
+.item{
+    width: 25%;
+    font-size: 140rpx;
+    text-align: center;
+    align-items: center;
+    /*把边线算入盒子总大小*/
+    box-sizing: border-box;
+    border-top:1rpx solid white;
+    border-right:1rpx solid white;
+}
+.itemhover{
+    background-color:blue;
+}
+.grey{
+color: rgb(225, 225, 236);
+background-color:rgb(70, 73, 75);
+}
+.black{
+color: rgb(225, 225, 236);
+background-color: rgb(59, 48, 48);
+}
